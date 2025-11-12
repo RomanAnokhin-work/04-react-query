@@ -54,6 +54,7 @@ function App() {
 
   return (
     <div className={css.app}>
+      <SearchBar onSubmit={handleQuery} />
       {isSuccess && totalPages > 1 && (
         <ReactPaginate
           pageCount={totalPages}
@@ -67,7 +68,6 @@ function App() {
           previousLabel="←"
         />
       )}
-      <SearchBar onSubmit={handleQuery} />
       {isSuccess ? (
         <MovieGrid onSelect={openModal} movies={data.results} />
       ) : null}
