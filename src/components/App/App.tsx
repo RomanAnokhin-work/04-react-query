@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 import css from "./App.module.css";
 import SearchBar from "../SearchBar/SearchBar";
-import getMovies from "../services/movieService";
+import getMovies from "../../services/movieService";
 import MovieGrid from "../MovieGrid/MovieGrid";
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
